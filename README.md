@@ -1,4 +1,4 @@
-Ansible Role - 
+Ansible Role - <role_name>
 =========
 
 A brief description of the role goes here.
