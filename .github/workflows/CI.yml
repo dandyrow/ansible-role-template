@@ -7,12 +7,9 @@ on:
     branches:
       - "master"
 
-env:
-  ROLENAME: <role_name> #TODO: Set role_name
-
 defaults:
   run:
-    working-directory: ${{ env.ROLENAME }}
+    working-directory: <role_name> #TODO: Set role name
 
 jobs:
   lint:
@@ -22,7 +19,7 @@ jobs:
       - name: Check out the codebase.
         uses: actions/checkout@v3.2.0
         with:
-          path: ${{ env.ROLENAME }}
+          path: <role_name> #TODO: Set role name
 
       - name: Set up Python 3.
         uses: actions/setup-python@v4.4.0
@@ -53,7 +50,7 @@ jobs:
       - name: Check out the codebase.
         uses: actions/checkout@v3.2.0
         with:
-          path: ${{ env.ROLENAME }}
+          path: <role_name> #TODO: Set role name
 
       - name: Set up Python 3.
         uses: actions/setup-python@v4.4.0
